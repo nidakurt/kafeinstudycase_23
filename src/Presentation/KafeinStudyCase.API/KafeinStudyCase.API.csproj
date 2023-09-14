@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+<ItemGroup>
+    <ProjectReference Include="..\..\Core\KafeinStudyCase.Application\KafeinStudyCase.Application.csproj" />
+    <ProjectReference Include="..\..\Core\KafeinStudyCase.DbMigrations\KafeinStudyCase.DbMigrations.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\KafeinStudyCase.Infrastructure\KafeinStudyCase.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\KafeinStudyCase.Persistence\KafeinStudyCase.Persistence.csproj" />
+  </ItemGroup>
+
+<ItemGroup>
+  <Reference Include="KafeinStudyCase.Core.Base">
+    <HintPath>..\..\..\..\KafeinStudyCase.Core\Base\src\KafeinStudyCase.Core.Base\bin\Release\net7.0\KafeinStudyCase.Core.Base.dll</HintPath>
+  </Reference>
+  <Reference Include="KafeinStudyCase.Core.Data">
+    <HintPath>..\..\..\..\KafeinStudyCase.Core\Data\src\KafeinStudyCase.Core.Data\bin\Release\net7.0\KafeinStudyCase.Core.Data.dll</HintPath>
+  </Reference>
+  <Reference Include="KafeinStudyCase.Core.ExceptionHandling">
+    <HintPath>..\..\..\..\KafeinStudyCase.Core\ExceptionHandling\src\KafeinStudyCase.Core.ExceptionHandling\bin\Release\net7.0\KafeinStudyCase.Core.ExceptionHandling.dll</HintPath>
+  </Reference>
+  <Reference Include="KafeinStudyCase.Core.Networking">
+    <HintPath>..\..\..\..\KafeinStudyCase.Core\Networking\src\KafeinStudyCase.Core.Networking\bin\Release\net7.0\KafeinStudyCase.Core.Networking.dll</HintPath>
+  </Reference>
+</ItemGroup>
+
+</Project>

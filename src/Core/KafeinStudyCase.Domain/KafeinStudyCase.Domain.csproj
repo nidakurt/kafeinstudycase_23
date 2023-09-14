@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="KafeinStudyCase.Core.Data">
+      <HintPath>..\..\..\..\KafeinStudyCase.Core\Data\src\KafeinStudyCase.Core.Data\bin\Release\net7.0\KafeinStudyCase.Core.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="KafeinStudyCase.Core.ExceptionHandling">
+      <HintPath>..\..\..\..\KafeinStudyCase.Core\ExceptionHandling\src\KafeinStudyCase.Core.ExceptionHandling\bin\Release\net7.0\KafeinStudyCase.Core.ExceptionHandling.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

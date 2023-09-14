@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+		<PackageReference Include="FluentValidation" Version="11.5.1" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
+		<PackageReference Include="MediatR" Version="12.0.1" />
+		<PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+	</ItemGroup>
+
+<ItemGroup>
+  <Folder Include="Core\Infrastructure\Services\" />
+  <Folder Include="Handlers\Documents\Queries\" />
+  <Folder Include="Models\" />
+</ItemGroup>
+
+<ItemGroup>
+		<ProjectReference Include="..\KafeinStudyCase.Domain\KafeinStudyCase.Domain.csproj" />
+	</ItemGroup>
+
+<ItemGroup>
+  <Reference Include="KafeinStudyCase.Core.Base">
+    <HintPath>..\..\..\..\KafeinStudyCase.Core\Base\src\KafeinStudyCase.Core.Base\bin\Release\net7.0\KafeinStudyCase.Core.Base.dll</HintPath>
+  </Reference>
+  <Reference Include="KafeinStudyCase.Core.Data">
+    <HintPath>..\..\..\..\KafeinStudyCase.Core\Data\src\KafeinStudyCase.Core.Data\bin\Debug\net7.0\KafeinStudyCase.Core.Data.dll</HintPath>
+  </Reference>
+  <Reference Include="KafeinStudyCase.Core.ExceptionHandling">
+    <HintPath>..\..\..\..\KafeinStudyCase.Core\ExceptionHandling\src\KafeinStudyCase.Core.ExceptionHandling\bin\Release\net7.0\KafeinStudyCase.Core.ExceptionHandling.dll</HintPath>
+  </Reference>
+  <Reference Include="KafeinStudyCase.Core.Networking">
+    <HintPath>..\..\..\..\KafeinStudyCase.Core\Networking\src\KafeinStudyCase.Core.Networking\bin\Release\net7.0\KafeinStudyCase.Core.Networking.dll</HintPath>
+  </Reference>
+</ItemGroup>
+</Project>
